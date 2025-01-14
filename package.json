@@ -4,6 +4,7 @@
   "description": "phone backend",
   "main": "index.js",
   "scripts": {
+    "build-ui": "rm -rf dist && cd ../frontend && npm run build && cp -r dist ../backend",
     "dev": "nodemon index.js",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
